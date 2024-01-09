@@ -16,3 +16,4 @@
 8. Remove `.template` in `template-module/srm/commonMain/kotlin/com/eygraber`
 9. Update `rootProject.name` in `settings.gradle.kts`
 10. Update `template-module` name in `settings.gradle.kts`
+11. Remove `if` condition from `.github/workflows/publish_snapshot_release.yml`

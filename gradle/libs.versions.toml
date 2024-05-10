@@ -19,7 +19,7 @@ kotlin = "1.9.24"
 
 kotlinInject = "0.7.0-SNAPSHOT"
 
-kotlinx-coroutines = "1.8.0"
+kotlinx-coroutines = "1.8.1"
 
 ksp = "1.9.24-1.0.20"
 

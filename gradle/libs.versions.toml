@@ -7,7 +7,7 @@ android-sdk-min = "24"
 
 composeJetbrains = "1.6.10"
 
-conventions = "0.0.71"
+conventions = "0.0.74"
 
 detekt = "1.23.6"
 detektEygraber = "1.0.11"
@@ -15,13 +15,11 @@ detektEygraber = "1.0.11"
 dokka = "1.9.20"
 
 kodein = "7.21.2"
-kotlin = "1.9.24"
+kotlin = "2.0.0"
 
 kotlinInject = "0.7.0-SNAPSHOT"
 
 kotlinx-coroutines = "1.8.1"
-
-ksp = "2.0.0-1.0.21"
 
 ktlint = "1.2.1"
 
@@ -33,24 +31,15 @@ conventions = { id = "com.eygraber.conventions", version.ref = "conventions" }
 [libraries]
 buildscript-android = { module = "com.android.tools.build:gradle", version.ref = "agp" }
 buildscript-androidCacheFix = { module = "gradle.plugin.org.gradle.android:android-cache-fix-gradle-plugin", version = "3.0.1" }
-buildscript-compose = { module = "org.jetbrains.compose:compose-gradle-plugin", version.ref = "composeJetbrains" }
+buildscript-compose-compiler = { module = "org.jetbrains.kotlin:compose-compiler-gradle-plugin", version.ref = "kotlin" }
+buildscript-compose-jetbrains = { module = "org.jetbrains.compose:compose-gradle-plugin", version.ref = "composeJetbrains" }
 buildscript-detekt = { module = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin", version.ref = "detekt" }
 buildscript-dokka = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version.ref = "dokka" }
 buildscript-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 buildscript-publish = { module = "com.vanniktech:gradle-maven-publish-plugin", version.ref = "publish" }
-buildscript-ksp = { module = "com.google.devtools.ksp:symbol-processing-gradle-plugin", version.ref = "ksp" }
-
-compose-compilerJetbrains = "org.jetbrains.compose.compiler:compiler:1.5.14"
 
 detektEygraber-formatting = { module = "com.eygraber.detekt.rules:formatting", version.ref = "detektEygraber" }
 detektEygraber-style = { module = "com.eygraber.detekt.rules:style", version.ref = "detektEygraber" }
-
-kodein-core = { module = "org.kodein.di:kodein-di", version.ref = "kodein" }
-
-kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
-
-kotlinInject-compiler = { module = "me.tatarka.inject:kotlin-inject-compiler-ksp", version.ref = "kotlinInject" }
-kotlinInject-runtime = { module = "me.tatarka.inject:kotlin-inject-runtime", version.ref = "kotlinInject" }
 
 # not actually used; just here so renovate picks it up
 ktlint = { module = "com.pinterest.ktlint:ktlint-bom", version.ref = "ktlint" }

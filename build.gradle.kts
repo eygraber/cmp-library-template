@@ -45,6 +45,11 @@ gradleConventionsDefaults {
 }
 
 gradleConventionsKmpDefaults {
+  webOptions = webOptions.copy(
+    isNodeEnabled = false,
+    isBrowserEnabled = true,
+  )
+
   targets(
     KmpTarget.Android,
     KmpTarget.Ios,

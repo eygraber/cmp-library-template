@@ -6,8 +6,8 @@
   - GIT_SIGNING_PRIVATE_KEY
   - GIT_SIGNING_PRIVATE_KEY_PASSWORD
   - PUSH_PAT
-  - SONATYPE_NEXUS_PASSWORD
-  - SONATYPE_NEXUS_USERNAME
+  - MAVEN_CENTRAL_PASSWORD
+  - MAVEN_CENTRAL_USERNAME
 3. Remove unused entries from `gradle/libs.versions.toml`
 4. Add labels to GitHub repo from `changelog_config.json`
 5. Update POM properties in `gradle.properties`
